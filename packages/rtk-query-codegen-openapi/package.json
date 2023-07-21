@@ -1,14 +1,10 @@
 {
-  "name": "@rtk-query/codegen-openapi",
+  "name": "@valli_/codegen-openapi",
   "version": "1.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Lenz Weber",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/reduxjs/redux-toolkit.git"
-  },
   "bugs": {
     "url": "https://github.com/reduxjs/redux-toolkit/issues"
   },
@@ -18,7 +14,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build && chmod +x ./lib/bin/cli.js",
     "format": "prettier --write \"src/**/*.ts\"",
     "test:update": "lib/bin/cli.js test/fixtures/petstore.json --file test/fixtures/generated.ts -h",
     "test": "jest --runInBand",
@@ -56,12 +51,12 @@
   },
   "dependencies": {
     "@apidevtools/swagger-parser": "^10.0.2",
-    "@rtk-query/oazapfts-patched": "^3.6.0-2",
     "commander": "^6.2.0",
+    "oazapfts": "^4.7.3",
     "prettier": "^2.2.1",
     "semver": "^7.3.5",
     "swagger2openapi": "^7.0.4",
-    "typescript": ">=4.1 <=4.5"
+    "typescript": "^5.0.4"
   },
   "husky": {
     "hooks": {

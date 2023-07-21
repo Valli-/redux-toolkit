@@ -1,6 +1,5 @@
 {
   "name": "rtk-monorepo",
-  "private": true,
   "description": "The official, opinionated, batteries-included toolset for efficient Redux development",
   "author": "Mark Erikson <mark@isquaredsoftware.com>",
   "license": "MIT",
