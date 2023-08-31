@@ -1,6 +1,6 @@
 {
   "name": "@valli_/codegen-openapi",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Lenz Weber",
@@ -52,11 +52,11 @@
   "dependencies": {
     "@apidevtools/swagger-parser": "^10.0.2",
     "commander": "^6.2.0",
-    "oazapfts": "^4.7.3",
+    "oazapfts": "^4.8.2",
     "prettier": "^2.2.1",
     "semver": "^7.3.5",
     "swagger2openapi": "^7.0.4",
-    "typescript": "^5.0.4"
+    "typescript": "^5.2.2"
   },
   "husky": {
     "hooks": {

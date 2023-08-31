@@ -6733,46 +6733,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rtk-query/codegen-openapi@workspace:packages/rtk-query-codegen-openapi":
-  version: 0.0.0-use.local
-  resolution: "@rtk-query/codegen-openapi@workspace:packages/rtk-query-codegen-openapi"
-  dependencies:
-    "@apidevtools/swagger-parser": ^10.0.2
-    "@babel/core": ^7.12.10
-    "@babel/preset-env": ^7.12.11
-    "@babel/preset-typescript": ^7.12.7
-    "@reduxjs/toolkit": ^1.6.0
-    "@types/commander": ^2.12.2
-    "@types/glob-to-regexp": ^0.4.0
-    "@types/jest": ^27
-    "@types/lodash": ^4.14.165
-    "@types/node": ^14.14.12
-    "@types/prettier": ^2.1.6
-    "@types/semver": ^7.3.9
-    babel-jest: ^26.6.3
-    chalk: ^4.1.0
-    commander: ^6.2.0
-    del: ^6.0.0
-    esbuild: ^0.13.10
-    esbuild-runner: ^2.2.1
-    husky: ^4.3.6
-    jest: ^27
-    msw: ^0.40.2
-    oazapfts: ^4.7.3
-    openapi-types: ^9.1.0
-    prettier: ^2.2.1
-    pretty-quick: ^3.1.0
-    semver: ^7.3.5
-    swagger2openapi: ^7.0.4
-    ts-jest: ^27
-    ts-node: ^10.4.0
-    typescript: ^5.0.4
-    yalc: ^1.0.0-pre.47
-  bin:
-    rtk-query-codegen-openapi: lib/bin/cli.js
-  languageName: unknown
-  linkType: soft
-
 "@rtk-query/graphql-request-base-query@^2.0.0, @rtk-query/graphql-request-base-query@workspace:packages/rtk-query-graphql-request-base-query":
   version: 0.0.0-use.local
   resolution: "@rtk-query/graphql-request-base-query@workspace:packages/rtk-query-graphql-request-base-query"
@@ -8465,6 +8425,46 @@ __metadata:
   checksum: 8f104eda321cd6c613daf284fbebbd32b149d4213d137b0ce1caec7a1334c9f46c82ed64aff1243b712ac8c13f67ac344c996cd36d21fbb15032c24d9897a64a
   languageName: node
   linkType: hard
+
+"@valli_/codegen-openapi@workspace:packages/rtk-query-codegen-openapi":
+  version: 0.0.0-use.local
+  resolution: "@valli_/codegen-openapi@workspace:packages/rtk-query-codegen-openapi"
+  dependencies:
+    "@apidevtools/swagger-parser": ^10.0.2
+    "@babel/core": ^7.12.10
+    "@babel/preset-env": ^7.12.11
+    "@babel/preset-typescript": ^7.12.7
+    "@reduxjs/toolkit": ^1.6.0
+    "@types/commander": ^2.12.2
+    "@types/glob-to-regexp": ^0.4.0
+    "@types/jest": ^27
+    "@types/lodash": ^4.14.165
+    "@types/node": ^14.14.12
+    "@types/prettier": ^2.1.6
+    "@types/semver": ^7.3.9
+    babel-jest: ^26.6.3
+    chalk: ^4.1.0
+    commander: ^6.2.0
+    del: ^6.0.0
+    esbuild: ^0.13.10
+    esbuild-runner: ^2.2.1
+    husky: ^4.3.6
+    jest: ^27
+    msw: ^0.40.2
+    oazapfts: ^4.8.2
+    openapi-types: ^9.1.0
+    prettier: ^2.2.1
+    pretty-quick: ^3.1.0
+    semver: ^7.3.5
+    swagger2openapi: ^7.0.4
+    ts-jest: ^27
+    ts-node: ^10.4.0
+    typescript: ^5.2.2
+    yalc: ^1.0.0-pre.47
+  bin:
+    rtk-query-codegen-openapi: lib/bin/cli.js
+  languageName: unknown
+  linkType: soft
 
 "@webassemblyjs/ast@npm:1.11.1":
   version: 1.11.1
@@ -20485,18 +20485,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"oazapfts@npm:^4.7.3":
-  version: 4.7.3
-  resolution: "oazapfts@npm:4.7.3"
+"oazapfts@npm:^4.8.2":
+  version: 4.8.2
+  resolution: "oazapfts@npm:4.8.2"
   dependencies:
     "@apidevtools/swagger-parser": ^10.1.0
     lodash: ^4.17.21
     minimist: ^1.2.8
     swagger2openapi: ^7.0.8
-    typescript: ^5.0.4
+    typescript: ^5.2.2
   bin:
     oazapfts: lib/codegen/cli.js
-  checksum: 4ba4249e7dbca5b09d66ff437f56792af5c570f1b266fd21eabf57cd08e306820c9cf0b4a79c572ef85aa3a9c1d7067c1872667bcac62c9f4a95050f35c1eda8
+  checksum: 8f5e9713c27b4f1e463bee3597c68b9ae8706d66bdd8aa7282848cabe5f8ecf1ef65dc5008b69f0c83c6bdc785c1cc1014af0ee781cd7e63f0dbc5466d69ad72
   languageName: node
   linkType: hard
 
@@ -27138,13 +27138,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.0.4":
-  version: 5.1.6
-  resolution: "typescript@npm:5.1.6"
+"typescript@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "typescript@npm:5.2.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b2f2c35096035fe1f5facd1e38922ccb8558996331405eb00a5111cc948b2e733163cc22fab5db46992aba7dd520fff637f2c1df4996ff0e134e77d3249a7350
+  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
   languageName: node
   linkType: hard
 
@@ -27198,13 +27198,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^5.0.4#~builtin<compat/typescript>":
-  version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=701156"
+"typescript@patch:typescript@^5.2.2#~builtin<compat/typescript>":
+  version: 5.2.2
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 21e88b0a0c0226f9cb9fd25b9626fb05b4c0f3fddac521844a13e1f30beb8f14e90bd409a9ac43c812c5946d714d6e0dee12d5d02dfc1c562c5aacfa1f49b606
+  checksum: 07106822b4305de3f22835cbba949a2b35451cad50888759b6818421290ff95d522b38ef7919e70fb381c5fe9c1c643d7dea22c8b31652a717ddbd57b7f4d554
   languageName: node
   linkType: hard
 

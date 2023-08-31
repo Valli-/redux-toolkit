@@ -94,6 +94,7 @@ export async function generateApi(
     unionUndefined,
     flattenArg = false,
     useEnumType = false,
+    mergeReadWriteOnly = false,
   }: GenerationOptions
 ) {
   const v3Doc = await getV3Doc(spec);
@@ -101,6 +102,7 @@ export async function generateApi(
   const apiGen = new ApiGenerator(v3Doc, {
     unionUndefined,
     useEnumType,
+    mergeReadWriteOnly,
   });
 
   const operationDefinitions = getOperationDefinitions(v3Doc).filter(operationMatches(filterEndpoints));
